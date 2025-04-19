@@ -6,7 +6,7 @@ xhr.responseType = 'json';
 
 xhr.onload = function() {
     var articles = xhr.response.articles;
-    var articleDiv = document.getElementById('articles');
+    var articlesDiv = document.getElementById('articles');
 
     articles.forEach(function(article) {
     var articleDiv = document.createElement('div');
