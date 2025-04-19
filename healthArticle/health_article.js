@@ -7,8 +7,8 @@ xhr.responseType = 'json';
 xhr.onload = function() {
     var articles = xhr.response.articles;
     var articleDiv = document.getElementById('articles');
-}
-articles.forEach(function(article) {
+
+    articles.forEach(function(article) {
     var articleDiv = document.createElement('div');
     articleDiv.classList.add('article');
 
@@ -45,7 +45,8 @@ articles.forEach(function(article) {
     articleDiv.appendChild(benefitsHeader);
     articleDiv.appendChild(benefitsList);
 
-    articleDiv.appendChild(articleDiv);
+    articlesDiv.appendChild(articleDiv);
   });
+};
 
 xhr.send();
